@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPG</title>
+    <link rel="stylesheet" href="./lib/css/reset.css">
+    <link rel="stylesheet" href="./lib/css/common.css">
+    <link rel="stylesheet" href="./lib/css/fonts.css">
+
+    <link rel="stylesheet" href="./lib/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./lib/css/jquery.fullpage.css">
+
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./lib/js/jquery-1.12.4.min.js"></script>
+    <script src="./lib/js/swiper-bundle.min.js"></script>
+
+    <script src="./lib/js/jquery.fullpage.js"></script>
+    <script src="./lib/js/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+
+    <script src="./js/custom.js"></script>
+</head>
+
+<body>
+
+    <div id="full_wrap">
+        <header id="header">
+            <div class="hd_wrap">
+                <h1>
+                    <a href="/">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#store">제품소개</a>
+                        </li>
+                        <li><a href="#banner"> 마케팅</a>
+                        </li>
+                        <li><a href="#solution"> 고객지원</a>
+                        </li>
+                        <li><a href="#promotion"> IR정보</a>
+                        </li>
+                        <li><a href="#story"> 회사소개</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="utils">
+                    <a href="">
+                        Login
+                    </a>
+                    <a href="">
+                        Language
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <aside class="side_lnk">
+            <ul>
+                <li class="on"><a href="#intro">intro</a></li>
+                <li><a href="#store">store</a></li>
+                <li><a href="#banner">banner</a></li>
+                <li><a href="#solution">solution</a></li>
+                <li><a href="#promotion">promotion</a></li>
+                <li><a href="#story">story</a></li>
+
+            </ul>
+        </aside>
+
+        <section class="main_intro section default">
+            <div class="swiper main_intro_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide itm itm01">
+                    </div>
+                    <div class="swiper-slide itm itm02">
+                    </div>
+                    <div class="swiper-slide itm itm03">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main_store section default">
+            <div class="title">
+                <h2>SPG의 제품군
+                </h2>
+            </div>
+            <div class="store_wrap">
+                <div class="swiper main_store_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide itm">
+                            <div class="s_txt">
+                                <strong>ROBOT REDUCER</strong>
+                                <p>KSH REDUCER _ Precision Reducer
+                                    <br> KSR REDUCER _ Low Backlash Reducer
+                                </p>
+                            </div>
+                            <figure>
+                                <img src="./images/main_store01.png" alt="">
+                            </figure>
+
+                        </div>
+                        <div class="swiper-slide itm">
+                            <div class="s_txt">
+                                <strong>PLANETARY GEARHEAD</strong>
+                                <p>Planetary Gearhead
+
+                                    <br> Hollow Rotary Table
+                                </p>
+                            </div>
+                            <figure>
+                                <img src="./images/main_store02.png" alt="">
+                            </figure>
+
+                        </div>
+                        <div class="swiper-slide itm">
+                            <div class="s_txt">
+                                <strong>AC</strong>
+                                <p>Standard AC motor, Industrial AC Geared Motor, Condenser Run Geared Motor
+
+                                    <br>Shaded Pole Geared Motor, Fan AC Motor
+
+
+                                </p>
+                            </div>
+                            <figure>
+                                <img src="./images/main_store03.png" alt="">
+                            </figure>
+
+                        </div>
+                        <div class="swiper-slide itm">
+                            <div class="s_txt">
+                                <strong>DC</strong>
+                                <p>Standard Series, XD/XA Series, Worm Geared Series,
+                                    <br> Compact Series, Special Series
+                                </p>
+                            </div>
+                            <figure>
+                                <img src="./images/main_store04.png" alt="">
+                            </figure>
+
+                        </div>
+                        <div class="swiper-slide itm">
+                            <div class="s_txt">
+                                <strong>BLDC</strong>
+                                <p>Standard BLDC Motor _ Compact, High power X-TOR Series
+                                    <br> Fan BLDC _ Motors for Refrigerator,<br> Motors for Air Cleanea & Dehumidifier,
+                                    Motors for Air Condiitioner
+                                </p>
+                            </div>
+                            <figure>
+                                <img src="./images/main_store05.png" alt="">
+                            </figure>
+
+                        </div>
+                        <div class="swiper-slide itm">
+                            <div class="s_txt">
+                                <strong>STEP</strong>
+                                <p>KSH REDUCER _ Precision Reducer
+                                    <br> KSR REDUCER _ Low Backlash Reducer
+                                </p>
+                            </div>
+                            <figure>
+                                <img src="./images/main_store06.png" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="main_banner section default">
+            <div class="title w">
+                <h2>어떤 모터를 선택해야 할 지 모르겠다면?</h2>
+                <p>당신에게 필요한 SPG의 모터를 추천합니다.
+                </p>
+
+            </div>
+            <div class="banner_box">
+                <div class="box_itm"><a href="">
+                        <figure>
+                            <img src="./images/main_banner_itm01.png" alt="">
+                        </figure>
+                        <p>
+                            맞춤형 모터 검색
+                        </p>
+
+                    </a></div>
+                <div class="box_itm"><a href="">
+                        <figure>
+                            <img src="./images/main_banner_itm02.png" alt="">
+                        </figure>
+                        <p>
+                            감속기 선정
+                        </p>
+
+                    </a></div>
+                <div class="box_itm"><a href="">
+                        <figure>
+                            <img src="./images/main_banner_itm03.png" alt="">
+                        </figure>
+                        <p>
+                            매뉴얼 다운로드
+                        </p>
+
+                    </a></div>
+                <div class="box_itm"><a href="">
+                        <figure>
+                            <img src="./images/main_banner_itm04.png" alt="">
+                        </figure>
+                        <p>
+                            기술자료
+                        </p>
+
+                    </a></div>
+
+            </div>
+        </section>
+        <section class="main_map section default">
+            <div class="inner">
+                <div class="map_box">
+
+                </div>
+                <div class="map_wrap">
+                    <div class="map_maker maker1">
+                        <img src="./images/branch_marking.png" alt="">
+                    </div>
+                    <div class="map_maker maker2">
+                        <img src="./images/branch_marking.png" alt="">
+                    </div>
+                    <div class="map_maker maker3">
+                        <img src="./images/branch_marking.png" alt="">
+                    </div>
+                    <div class="map_maker maker4">
+                        <img src="./images/branch_marking.png" alt="">
+                    </div>
+                    <div class="map_maker maker5">
+                        <img src="./images/branch_marking.png" alt="">
+                    </div>
+                    <div class="map_maker maker6">
+                        <img src="./images/branch_marking.png" alt="">
+                    </div>
+                    <div class="map_maker maker7">
+                        <img src="./images/branch_marking.png" alt="">
+                    </div>
+                    <div class="map_maker maker8">
+                        <img src="./images/branch_marking.png" alt="">
+                    </div>
+                    <div class="map_maker maker9">
+                        <img src="./images/branch_marking.png" alt="">
+                    </div>
+                </div>
+
+                <div class="title">
+                    <h2>SPG<br> EVERYWHERE
+                    </h2>
+                    <p>SPG는 국내 뿐만 아니라 전세계 수십개의 지사를 보유하고 있습니다.
+                    </p>
+                    <strong>
+                        전세계 어느곳이라도 SPG를 찾을 수 있습니다.
+                        <br> 가까운 대리점을 찾아보세요. </strong>
+                    <button class="map_btn">
+                        <img src="./images/main_map_icon.png" alt="" class="btn_i">
+                        <span class="btn_txt">대리점 찾아보기</span>
+                    </button>
+                </div>
+
+            </div>
+
+
+        </section>
+        <section class="main_event section default">
+            <div class="title">
+                <h2>SPG 기업정보</h2>
+            </div>
+            <div class="inner">
+                <div class="e_top">
+                    <ul>
+                        <li>
+                            <em>현재가</em>
+                            <p>25,350 KRW</p>
+                        </li>
+
+                        <li>
+                            <em>전일대비</em>
+                            <p>50</p>
+                        </li>
+                        <li>
+                            <em>등락율</em>
+                            <p>-0.20%</p>
+                        </li>
+                        <li>
+                            <em>거래량</em>
+                            <p>80,684</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="e_bottom">
+                    <div class="e_itm">
+                        <figure>
+                            <img src="./images/main_event01.png" alt="">
+                        </figure>
+                        <p>
+                            매출액
+                        </p>
+                        <strong class="counter">416,334</strong>
+
+                    </div>
+                    <div class="e_itm">
+                        <figure>
+                            <img src="./images/main_event02.png" alt="">
+                        </figure>
+                        <p>
+                            자산
+                        </p>
+                        <strong class="counter">365,091</strong>
+
+                    </div>
+                    <div class="e_itm">
+                        <figure>
+                            <img src="./images/main_event03.png" alt="">
+                        </figure>
+                        <p>
+                            자본
+                        </p>
+                        <strong class="counter">193,091</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main_story section default">
+            <div class="title">
+                <h2 class="blind">SPG story</h2>
+            </div>
+            <div class="story_wrap">
+                <div class="story_itm s_itm1">
+                    <div class="story_txt">
+                        <h3>SPG 제품문의</h3>
+                        <p>신속하게 대응하도록 하겠습니다.
+                        </p>
+                    </div>
+
+
+                </div>
+                <div class="story_itm s_itm2">
+                    <div class="story_txt">
+                        <h3>SPG FAQ</h3>
+                        <p>고객님의 궁금한 사항들을 간단하고 빠르게 해결 하실 수 있습니다.
+
+                        </p>
+                    </div>
+
+
+                </div>
+                <div class="story_itm s_itm3">
+                    <div class="story_txt">
+                        <h3>SPG 다운로드</h3>
+                        <p>제품의 모든 자료를 다운 받을 수 있습니다.</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <footer id="footer" class="section default fp-auto-height">
+            <div class="inner">
+                <div class="f_top">
+                    <div class="f_logo">
+                        <img src="./images/ft_logo.png" alt="">
+                    </div>
+                    <ul>
+                        <li><a href="">제품문의 </a></li>
+                        <li><a href="" style="font-weight: 500; color: var(--pr-c);"> 개인정보처리방침 </a></li>
+                        <li><a href=""> 이용약관</a></li>
+                    </ul>
+                </div>
+                <div class="f_bottom">
+                    <ul>
+                        <li>인천광역시 남동구 청능대로 289번길 45 (고잔동, 남동공단 67B 12L)</li>
+                        <li> TEL 032-820-8200 ㅣ FAX 032-821-0383</li>
+                    </ul>
+                    <address>
+                        &copy; SPG Co., Ltd All rights Reserved
+                    </address>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
