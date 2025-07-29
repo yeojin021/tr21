@@ -7,23 +7,24 @@ $(function () {
         anchors: ['intro', 'store', 'banner', 'solution', 'promotion', 'story'],
         css3: false,
 
-
-        afterLoad: function (o, d, dr) {
-            if (d !== 1) {
-                $('.to_top').addClass('on')
-            }
-
-            // $('.side_lnk li').removeClass('on');
-            // $('.side_lnk li').eq(d - 1).addClass('on')
-
-            // $('.section').removeClass('on');
-            // $('.section').eq(idx - 1).addClass('on');
-        },
         afterLoad: function (_, idx) {
             $('.section').removeClass('on');
             $('.section').eq(idx - 1).addClass('on');
             $('.side_lnk li').removeClass('on');
             $('.side_lnk li').eq(idx - 1).addClass('on');
+
+
+            if (idx !== 1) {
+                $('.to_top').addClass('on')
+            }
+
+            if (idx == 5) {
+                $('.counter').counterUp({
+                    delay: 10,
+                    time: 1000
+                });
+            }
+
         },
 
 
@@ -72,12 +73,14 @@ $(function () {
         loop: true,
     });
 
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });
-    let counterDone = false;
+});
 
 
 
-})
+$(function () {
+    $('.mbtn').on('click', function () {
+        $(this).toggleClass('is-active')
+        $('.gnb').toggleClass('on');
+        $('#header h1').toggleClass('on')
+    })
+});
